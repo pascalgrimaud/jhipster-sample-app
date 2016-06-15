@@ -6,9 +6,6 @@ node {
     stage 'backend tests'
     sh "./mvnw test"
 
-    stage 'frontend tests'
-    sh 'gulp test'
-
     stage 'package'
     sh "./mvnw package -Pprod -DskipTests"
 }
