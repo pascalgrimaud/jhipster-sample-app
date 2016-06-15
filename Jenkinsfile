@@ -3,9 +3,6 @@ node {
     checkout scm
     sh "./mvnw clean"
 
-    stage 'npm install'
-    sh "npm install"
-
     stage 'backend tests'
     sh "./mvnw test"
 
