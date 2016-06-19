@@ -1,7 +1,7 @@
 node {
     // edit the name 'node-4.4.5' according to the name you choose in configuration
-    def nodeHome = tool name: 'node-4.4.5', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
-    env.PATH = "${nodeHome}/bin:${env.PATH}"
+    // def nodeHome = tool name: 'node-4.4.5', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+    // env.PATH = "${nodeHome}/bin:${env.PATH}"
 
     stage 'check environment'
     sh "node -v"
