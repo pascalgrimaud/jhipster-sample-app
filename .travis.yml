@@ -1,6 +1,8 @@
-language: node_js
+language: java
 node_js:
   - "4.4.5"
+jdk:
+  - oraclejdk8
 sudo: false
 cache:
   directories:
